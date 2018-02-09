@@ -1,0 +1,12 @@
+t=int(input())
+while(t):
+    t-=1
+    n,k=map(int,input().split())
+    a=sorted(list(map(int,input().split())))
+    s=sum(a)
+    s1=sum(a[0:k])
+    s2=s-s1
+    a1=a[::-1]
+    s11=sum(a1[0:k])
+    s22=s-s11
+    print(max(abs(s2-s1),abs(s22-s11)))

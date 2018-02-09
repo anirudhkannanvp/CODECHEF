@@ -1,0 +1,9 @@
+t=int(input())
+while(t):
+    t=t-1
+    n,m,k=input().split()
+    n,m,k=int(n),int(m),int(k)
+    a,b=min(n,m),max(n,m)
+    c=b-a
+    c1=c-k
+    print(max(c1,0))

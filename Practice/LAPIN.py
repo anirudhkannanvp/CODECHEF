@@ -1,0 +1,20 @@
+t=int(input())
+while(t):
+    t-=1
+    a=str(input())
+    n=len(a)
+    a=list(a)
+    if(n%2==1):
+        a1=a[0:n//2]
+        a2=a[n//2+1:n]
+        #print(a1,a2)
+    else:
+        a1=a[0:n//2]
+        a2=a[n//2:n]
+        #print(a1,a2)
+    a1.sort()
+    a2.sort()
+    if(a1==a2):
+        print("YES")
+    else:
+        print("NO")

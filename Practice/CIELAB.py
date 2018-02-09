@@ -1,0 +1,17 @@
+a,b=input().split()
+a,b=int(a),int(b)
+c=a-b
+c1=str(a)
+c2=str(b)
+c=str(c)
+if(len(c)==1):
+    if(int(c)!=9):
+        print(int(c)+1)
+    else:
+        print(int(c)-1)
+else:
+    if(int(c[0])!=9):
+        print(str(int(c[0])+1),end="")
+    else:
+         print(str(int(c[0])-1),end="")
+    print(c[1:])

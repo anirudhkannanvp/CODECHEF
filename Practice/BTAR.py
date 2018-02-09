@@ -1,0 +1,30 @@
+t=int(input())
+while(t):
+    t-=1
+    ans=1e11+10
+    n=int(input())
+    arr=list(map(int,input().split()))
+    a=[0,0,0,0]
+    sum1=sum(arr)
+    for i in range(n):
+        a[arr[i]%4]+=1
+    if(sum1%4!=0):
+        print("-1")
+    else:
+        ans=min(a[1],a[3])
+        a[3]-=ans
+        a[1]-=ans
+        ans+=a[2]//2
+        a[2]%=2
+        if(a[2]):
+            ans+=2
+            a[2]=0
+            if(a[3]>1):
+                a[3]-=2
+            elif(a[1]>1):
+                a[1]-=2
+        if(a[1]):
+            ans+=(a[1]//4)*3
+        if(a[3]):
+            ans+=(a[3]//4)*3
+        print(ans)
