@@ -1,0 +1,16 @@
+t=int(input())
+while(t):
+    t=t-1
+    a=list(map(int,input()))
+    a1=a[::-1]
+    if(a.count(1)<1):
+        print("NO")
+    else:
+        b1=int(a.index(1))
+        b2=a1.index(1)
+        b2=int(len(a)-b2)
+        b3=a[b1:b2]
+        if(int(sum(b3))==b2-b1):
+            print("YES")
+        else:
+            print("NO")

@@ -1,0 +1,9 @@
+t=int(input())
+while(t):
+    t=t-1
+    a=set(input().split())
+    b=set(input().split())
+    if(len(a.intersection(b))>=2):
+        print("similar")
+    else:
+        print("dissimilar")

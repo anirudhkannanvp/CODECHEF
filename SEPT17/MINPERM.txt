@@ -1,0 +1,26 @@
+te=gets.to_i
+while(te>0)
+    te=te-1
+    n=gets.to_i
+    i=0
+    arr=[]
+    if(n%2==0)
+        while i<n
+            arr.push i+2
+            arr.push i+1
+            i+=2
+        end
+        puts arr.join(" ")
+        end
+     if(n%2==1)
+        while i<n-3
+            arr.push i+2
+            arr.push i+1
+            i+=2
+        end
+        arr.push n-1
+        arr.push n
+        arr.push n-2
+        puts arr.join(" ")
+        end
+end

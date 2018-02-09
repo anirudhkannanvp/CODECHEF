@@ -1,0 +1,13 @@
+t=gets.to_i
+while t > 0
+    t=t-1
+    n=gets.to_i
+    start=499
+    arr=[]
+    while n >0
+        n=n-1
+        arr.push start
+        start = start-2
+    end
+    puts arr.join(" ")
+end

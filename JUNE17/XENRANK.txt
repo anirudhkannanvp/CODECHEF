@@ -1,0 +1,19 @@
+package main
+import "fmt"
+func main(){
+var t int64
+var u int64
+var v int64
+var ans int64
+var ans1 int64
+var ans2 int64
+fmt.Scanf("%d", &t)
+for t > 0{
+t--
+fmt.Scanf("%d %d",&u,&v)
+ans1=u+v
+ans2=ans1*(ans1+1)
+ans=ans2/2
+fmt.Printf("%d\n",u+ans+1)    
+}
+}
