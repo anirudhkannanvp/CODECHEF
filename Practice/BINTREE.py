@@ -1,0 +1,13 @@
+n=int(input())
+while(n):
+    n-=1
+    i,j=map(int,input().split())
+    ans=0
+    while(i!=j):
+        if(i>j):
+            i//=2
+            ans+=1
+        else:
+            j//=2
+            ans+=1
+    print(ans)
