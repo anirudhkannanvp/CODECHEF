@@ -8,4 +8,4 @@ for i in range(n):
     else:
         ans+=1
         maxi=max(maxi,ans)
-print(maxi) 
+print(maxi)
